@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lab3</title>
+
+    <style>
+
+        .image-preview img {
+            border-width: 30px;
+            border-style: solid;
+            border-color: skyblue lightpink lightgreen #ffefd5;
+        }
+
+        p > span {
+            color: red;
+        }
+
+        .header span {
+            color: pink;
+        }
+        .header *:last-child {
+            color: orange;
+        }
+        .header span:first-child:hover {
+            color: blue;
+        }
+
+        span {
+            color: green;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 2px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="image-preview">
+    <img src='https://cpit405.gitlab.io/images/KAU_logo.png'  alt="KAU logo" />
+</div>
+
+<table>
+    <tr>
+        <th></th>
+        <th>color</th>
+        <th>color when mouse over</th>
+    </tr>
+    <tr>
+        <td>span.myclass1</td>
+        <td>
+            <div class="header">
+                <span class="myclass1">Every</span>
+            </div>
+        </td>
+        <td>
+            <span class="myclass1">Every</span>
+        </td>
+    </tr>
+    <tr>
+        <td>span.myclass2</td>
+        <td>
+            <div class="header">
+                <span class="myclass2">one can</span>
+            </div>
+        </td>
+        <td>
+            <span class="myclass2">one can</span>
+        </td>
+    </tr>
+    <tr>
+        <td>span.myclass3</td>
+        <td>
+            <div class="header">
+                <span class="myclass3">success.</span>
+            </div>
+        </td>
+        <td>
+            <span class="myclass3">success.</span>
+        </td>
+    </tr>
+    <tr>
+        <td>span.myclass4</td>
+        <td>
+            <p>
+                One machine can do the work of fifty ordinary men.
+                <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+            </p>
+        </td>
+        <td>
+            <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
